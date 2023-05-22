@@ -17,6 +17,7 @@
     --font-text: 'Glacial Indifference', 'Arial';
 }
 *{
+    padding:0;
     margin:0;
     max-height:100vh;
     box-sizing: border-box;
@@ -34,6 +35,7 @@ header {
     align-items: center;
     background: linear-gradient( to bottom, var(--cor-prin), var(--cor-sec));
     column-gap: 5vw;
+    flex-wrap: wrap;
 }
 header > .logo{
     height:200px;
@@ -45,13 +47,13 @@ header > .logo{
 header > .logo > img{
     display: flex;
     margin-bottom: 35px;
-    width:200px;
+    width:10rem;
     margin-top: 50px;
+    border-radius: 45px;
 
 }
 .outros-icones img{
     height:50px;
-    justify-self: right;
 }
 header > .caixa-de-pesquisa{
     display: flex;
@@ -61,7 +63,7 @@ header > .caixa-de-pesquisa{
     width:38%;
 }
 header > .caixa-de-pesquisa > input{
-    width: 95%;
+    width: 500px;
     border-radius: 45px;
     text-align: justify;
     padding:2%;
@@ -75,7 +77,7 @@ header > .outros-icones{
 header > .outros-icones > section{
     font-family: var(--font-text);
     font-size: 1.5em;
-    color:var(--fundo)
+    color:var(--fundo);
 }
 header> .outros-icones > section > a {
     text-decoration: none;
@@ -96,20 +98,68 @@ nav{
     color: var(--fundo);
 
 }
-nav ul li{
+#menu li{
     list-style: none;
     display: inline;
     align-content: space-around;
     column-gap: 10px;
 
 }
-nav ul li a{
+#menu > li a{
     display: inline-block;
     text-decoration: none;
     color: var(--fundo);
     padding:20px;
     transition: background .4s;
 }
-nav ul li a:hover{
+#menu > li a:hover{
     background-color: var(--cor-terc);
+}
+nav > .menu{
+    display:none;
+    cursor: pointer;
+}
+@media only screen and (max-width:1280px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        max-width: 250px;
+    }
+    #menu{
+        order:1;
+        display: none;
+        width:250px;
+        align-items: center;
+    }
+    #menu li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 250px;
+        padding:0;
+        justify-content: center;
+        text-align: center;
+    }
+    #menu li> a{
+        padding: 1.5 rem 1.6 rem;
+        justify-content: center;
+    }
+    #menu li> a:hover{
+        width: 250px;
+    }
+    nav > .menu{
+        display:flex;
+        order:0;
+    }
+}
+@media only screen and (max-width:673px){
+    .caixa-de-pesquisa{
+        order:2;
+    }
+    .caixa-de-pesquisa > input{
+        width:325px;
+    }
+    .outroos-itens{
+        order:1;
+    }
 }

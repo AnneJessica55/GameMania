@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Game Mania</title>
+<title>Game Mania</title>
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
         </div>
     </header>
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="#">Jogos</a></li>
             <li><a href="#">Periféricos</a></li>
@@ -34,6 +34,10 @@
             <li><a href="#">TVs</a></li>
             <li><a href="#">Poltronas</a></li>
         </ul>
+            <div class="menu">
+                <img src="Pictures/icons8-cardápio-48.svg" alt="Menu" class="btao-menu" onclick="menuDinamico()">
+            </div>
+        
     </nav>
     <main>
         
@@ -41,6 +45,14 @@
     <footer>
     
     </footer>
-    
-</body>
+    <script>
+        function menuDinamico(){
+            if(menu.style.display == 'block'){
+                menu.style.display ='none';
+            } else{
+                menu.style.display = 'block';
+            }
+        }
+    </script> 
+</body>   
 </html>
