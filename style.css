@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Hertical Texture';
+    src: url('Fontes/Hertical Sans/Hertical Sans Texture.ttf');
+}
+@font-face{
+    font-family: 'Glacial Indifference';
+    src: url('Fontes/GlacialIndifference-regular.otf'); 
+}
+:root{
+    --cor-prin: #263F73;
+    --cor-sec:  #006e90;
+    --cor-terc: #bb4430;
+    --fundo: #d8ddef;
+    --cor-fonte: #070e1c;
+    --font-title: 'Hertical Texture', 'Arial';
+    --font-text: 'Glacial Indifference', 'Arial';
+}
+*{
+    margin:0;
+    max-height:100vh;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--fundo);
+    width:100vw;
+}
+header {
+    max-width:1500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    background: linear-gradient( to bottom, var(--cor-prin), var(--cor-sec));
+    column-gap: 5vw;
+}
+header > .logo{
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .logo > img{
+    display: flex;
+    margin-bottom: 35px;
+    width:200px;
+    margin-top: 50px;
+
+}
+.outros-icones img{
+    height:50px;
+    justify-self: right;
+}
+header > .caixa-de-pesquisa{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 45px;
+    width:38%;
+}
+header > .caixa-de-pesquisa > input{
+    width: 95%;
+    border-radius: 45px;
+    text-align: justify;
+    padding:2%;
+    font-family: var(--font-text);
+    font-size: 1.5em;
+}
+header > .outros-icones{
+    display: flex;
+    flex-direction: column;
+}
+header > .outros-icones > section{
+    font-family: var(--font-text);
+    font-size: 1.5em;
+    color:var(--fundo)
+}
+header> .outros-icones > section > a {
+    text-decoration: none;
+    color: var(--fundo);
+}
+nav{
+    max-width:1500px;
+    width:95%;
+    display: flex;
+    font-family:var(--font-text);
+    font-weight: 900;
+    font-size:1.6em;
+    justify-content: center;
+    align-items: center;
+    background-color:  var(--cor-sec);
+    column-gap: 15%;
+    margin: auto;
+    color: var(--fundo);
+
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    align-content: space-around;
+    column-gap: 10px;
+
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--fundo);
+    padding:20px;
+    transition: background .4s;
+}
+nav ul li a:hover{
+    background-color: var(--cor-terc);
+}
