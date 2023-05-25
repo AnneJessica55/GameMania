@@ -187,6 +187,7 @@ main > .conteiner > .slide > .promocoes > img{
 /*Configuração do Mural*/
 main > .muralProd{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: #FFFF;
     align-items: center;
@@ -206,8 +207,8 @@ main > .muralProd > figure{
 }
 main > .muralProd > figure > a > img{
     width:30%;
-    min-width: 300px;
-    height:300px;
+    min-width: 200px;
+    height:200px;
     margin-bottom:20px;
 }
 main > .muralProd > figure > figcaption > a{
@@ -396,6 +397,9 @@ footer > .rodape > a > img:hover{
     }
     header > .outros-itens{
         order:1;
+    }
+    main > .muralProd{
+        flex-direction: column;
     }
 }
 /*Responsividade da NAVBAR*/
