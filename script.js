@@ -6,6 +6,13 @@ function menuDinamico(){
         menu.style.display = 'none'
     }
 }
+/*Fazer login*/
+function entrou(){
+    window.alert('Login realizado com sucesso!');
+}
+function esqueci(){
+    window.alert('Um e-mail de recuperação foi enviado ao endereço de cadastro.');
+}
 
 /*Slide*/
 let i = 1;

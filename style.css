@@ -203,7 +203,6 @@ main > .muralProd > figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing:;
 }
 main > .muralProd > figure > a > img{
     width:30%;
@@ -221,6 +220,139 @@ main > .muralProd > figure > figcaption > a > p{
     font-size:20px;
     text-shadow: -1px 1px 2px #070e1c91;
 }
+/*Página de Login*/
+main > .fundoLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    max-width: 1366px;
+    min-height: 100vh;
+    background-image: url(Pictures/fundo\ login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main > .fundoLogin > .caixaLogin{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    min-width: 300px;
+    background-color: #263e7375;
+    padding:40px 0;
+    border-radius: 12px;
+}
+main > .fundoLogin > .caixaLogin > form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text);
+    font-size: 20px;
+    color: var(--cor-contr);
+    text-align: center;
+    row-gap: 20px;
+    text-shadow: 1px 1px 2px #d8ddef59;
+}
+main > .fundoLogin > .caixaLogin > form > a{
+    text-decoration: none;
+    color:var(--cor-contr);
+}
+main > .fundoLogin > .caixaLogin > form > input{
+    width:200px;
+    height:30px;
+    text-align: center;
+    font-family: var(--font-text);
+    box-shadow: 2px 2px 2px 3px #070e1ca2;
+    border-radius: 5px;
+    background-color: #d8ddef59;
+    transition: background 0.6s;
+}
+main > .fundoLogin > .caixaLogin > form > input:hover{
+    background-color: var(--cor-fund);
+    transition: 0.6s;
+}
+main > .fundoLogin > .caixaLogin > form > #entrar{
+    background-color: #070E1C;
+    color: var(--cor-fund);
+    border:none;
+    transition: background 0.65s;
+}
+main > .fundoLogin > .caixaLogin > form > #entrar:hover{
+    background-color: var(--cor-terc);
+    transition:0.65s;
+}
+/*Configuração de página de cadastro*/
+main > .caixaCadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    max-width: 1366px;
+    min-height: 100vh;
+    background-image: url(Pictures/cadastroFundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+main > .caixaCadastro > form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:60%;
+    min-width: 300px;
+    background-color: #263e7375;
+    padding:40px 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text);
+    font-size: 30px;
+    color: var(--cor-contr);
+    text-align: center;
+    row-gap: 20px;
+    text-shadow: 1px 1px 2px #d8ddef59;
+    margin:80px 0;
+}
+main > .caixaCadastro > form > input{
+    width:80%;
+    min-width:200px;
+    height:30px;
+    text-align: center;
+    font-family: var(--font-text);
+    box-shadow: 2px 2px 2px 3px #070e1ca2;
+    border-radius: 5px;
+    background-color: #d8ddef59;
+    transition: background 0.6s;
+}
+main > .caixaCadastro > form > #cep[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+main > .caixaCadastro > form > #cep[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+ 
+ }[type=number]::-webkit-inner-spin-button
+main > .caixaCadastro > form > input:hover{
+    background-color: var(--cor-fund);
+    transition: 0.6s;
+}
+main > .caixaCadastro > form > #entrar{
+    background-color: #070E1C;
+    color: var(--cor-fund);
+    height:50px;
+    border:none;
+    font-size: 30px;
+    transition: background 0.65s;
+}
+main > .caixaCadastro > form > #entrar:hover{
+    background-color: var(--cor-terc);
+    transition:0.65s;}
 /*Configuração do footer*/
 footer{
     display: flex;

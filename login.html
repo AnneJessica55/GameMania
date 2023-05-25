@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Pictures/favicon_io/favicon.ico" type="image/x-icon">
     <title>Game Mania</title>
 </head>
 <body>
@@ -46,7 +47,21 @@
         
     </nav>
     <main>
-        
+      <div class="fundoLogin">
+        <div class="caixaLogin">
+            <form action="#" method="post">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required maxlength="16" placeholder="Digite seu e-mail.">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required maxlength="16" placeholder="Digite sua senha."><br>
+                <a href="#" onclick="esqueci()">
+                    <p>Esqueci minha senha.</p>
+                </a>
+                <a href="cadastro.html">Cadastre-se aqui.</a>
+                <input type="submit" value="Entrar" id="entrar" onclick="entrou()">
+            </form>
+        </div>
+      </div>  
     </main>
     <footer>
         <div class="rodape">
