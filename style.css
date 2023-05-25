@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'Herical Sans';
-    src: url(Fontes/Hertical Sans/Hertical Sans Regular.otf);
+    src: url(Fontes/Hertical\ Sans/Hertical\ Sans\ Regular.otf);
 }
 
 /*Criando variáveis para fontes e cores*/
@@ -125,6 +125,8 @@ main{
     min-height:25vh;
     width: 100vw;
     max-width: 1366px;
+    display: flex;
+    flex-direction: column;
 }
 /*Estilização do banner*/
 main > .banner{
@@ -134,7 +136,14 @@ main > .banner > img{
     max-width:1366px;
     width:100vw;
 }
-
+/*Estilização de h1*/
+main > h1{
+    font-family: var(--font-title);
+    margin-top:80px;
+    text-align: center;
+    color:var(--cor-prin);
+    text-shadow: -2px 2px 2px #090e1bb9;
+}
 /*Estilização do slide*/
 main > .conteiner{
     position:relative;
@@ -175,8 +184,43 @@ main > .conteiner > .slide > .promocoes{
 main > .conteiner > .slide > .promocoes > img{
     width: 100%;
 }
-
-
+/*Configuração do Mural*/
+main > .muralProd{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFF;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    max-width: 1366px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+main > .muralProd > figure{
+    width:30%;
+    height: 466px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing:;
+}
+main > .muralProd > figure > a > img{
+    width:30%;
+    min-width: 300px;
+    height:300px;
+    margin-bottom:20px;
+}
+main > .muralProd > figure > figcaption > a{
+    text-decoration: none;
+}
+main > .muralProd > figure > figcaption > a > p{
+    text-align:center;
+    color: var(--cor-contr);
+    font-family: var(--font-text);
+    font-size:20px;
+    text-shadow: -1px 1px 2px #070e1c91;
+}
 /*Configuração do footer*/
 footer{
     display: flex;
