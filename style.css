@@ -236,7 +236,7 @@ main > .fundoLogin{
     background-image: url(Pictures/fundo\ login.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: initial;
 }
 main > .fundoLogin > .caixaLogin{
     display:flex;
