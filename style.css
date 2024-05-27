@@ -1,4 +1,4 @@
-@charset "UTF-";
+@charset "UTF-8";
 /*Adicionando Fontes externas*/
 @font-face {
     font-family: 'Glacial Indifference';
@@ -105,20 +105,23 @@ nav > #menu > ul{
 }
 nav > #menu > ul > li{
     list-style: none;
-    display: inline-block;
+    display: block;
     font-family: var(--font-text);
     font-size: 1.5em;
+    padding: 0 10px;
+    text-align: center;
 }
 nav > #menu > ul > li> a{
     text-decoration: none;
     color: var(--cor-fund);
     transition: background 0.4s;
 }
-nav > #menu > ul > li> a:hover{
-background-color: var(--cor-terc);
-padding: 0 10px;
-display: block;
+nav > #menu > ul > li:hover{
+transform: scale(1.05);
 transition:0.4s;
+}
+nav > #menu > ul > li > a:hover{
+    color: var(--cor-terc);
 }
 /*Configuração do main*/
 main{
@@ -127,6 +130,7 @@ main{
     max-width: 1366px;
     display: flex;
     flex-direction: column;
+    position: static;
 }
 /*Estilização do banner*/
 main > .banner{
@@ -187,7 +191,6 @@ main > .conteiner > .slide > .promocoes > img{
 /*Configuração do Mural*/
 main > .muralProd{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     background-color: #FFFF;
     align-items: center;
@@ -207,8 +210,8 @@ main > .muralProd > figure{
 }
 main > .muralProd > figure > a > img{
     width:30%;
-    min-width: 200px;
-    height:200px;
+    min-width: 300px;
+    height:300px;
     margin-bottom:20px;
 }
 main > .muralProd > figure > figcaption > a{
@@ -297,7 +300,6 @@ main > .caixaCadastro{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 80px 0;
 }
 main > .caixaCadastro > form{
     display:flex;
@@ -330,10 +332,6 @@ main > .caixaCadastro > form > input{
     background-color: #d8ddef59;
     transition: background 0.6s;
 }
-main > .caixaCadastro > form > input:hover{
-    background-color: var(--cor-fund);
-    transition: 0.6s;
-}
 main > .caixaCadastro > form > #cep[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
@@ -350,7 +348,7 @@ main > .caixaCadastro > form > input:hover{
 main > .caixaCadastro > form > #entrar{
     background-color: #070E1C;
     color: var(--cor-fund);
-    height:50px;
+    height:40px;
     border:none;
     font-size: 30px;
     transition: background 0.65s;
@@ -389,7 +387,7 @@ footer > .rodape > a > img{
     transition: height 0.4s;
 }
 footer > .rodape > a > img:hover{
-    height: 55px;
+    transform: scale(1.2);
     transition:0.4s;
 }
 
@@ -401,9 +399,6 @@ footer > .rodape > a > img:hover{
     }
     header > .outros-itens{
         order:1;
-    }
-    main > .muralProd{
-        flex-direction: column;
     }
 }
 /*Responsividade da NAVBAR*/
@@ -432,4 +427,12 @@ footer > .rodape > a > img:hover{
         text-align: center;
         padding:10px;
 }
+}
+@media (max-width:979px){
+    .muralProd{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        row-gap: 40px
+        
+    }
 }
